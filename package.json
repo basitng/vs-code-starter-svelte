@@ -11,7 +11,10 @@
   ],
   "activationEvents": [
     "onCommand:vstodo.helloWorld",
-    "onCommand:vstodo.askQuestion"
+    "onCommand:vstodo.askQuestion",
+    "onCommand:vstodo.refresh",
+    "onView:vstodo-sidebar",
+    "onCommand:vstodo.addTodo"
   ],
   "main": "./dist/extension.js",
   "contributes": {
@@ -44,6 +47,16 @@
         "command": "vstodo.askQuestion",
         "category": "VSTodo",
         "title": "Ask Question"
+      },
+      {
+        "command": "vstodo.refresh",
+        "category": "VSTodo",
+        "title": "Refresh"
+      },
+      {
+        "command": "vstodo.addTodo",
+        "category": "VSTodo",
+        "title": "Add Todo"
       }
     ]
   },
